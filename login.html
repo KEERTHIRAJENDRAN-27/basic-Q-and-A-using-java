@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>login page</title>
+        <style>
+        .bg
+        {
+            background-image: url('manali.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover ;
+            width:100%;
+            height: 100%;
+        }
+        html,body{
+            margin: 0%;
+        }
+    </style> 
+    </head>
+    <body>
+        <div class="bg";>
+            <center>
+                <h1>Login page </h1>
+                <form>
+                    Name :
+                <input type="text" placeholder="enter name" required></br>
+                <br>
+                   EmailID :
+                <input type="text" placeholder="enter emailID" pattern="[^@]*@[^@]*"></br>
+                 password :
+                <input type="text" placeholder="enter password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required></br>
+                <br>
+                <input type="submit" value="click me"><br>
+                <a style="text-decoration: none;
+            font-size: 25px;
+            color:rgb(16, 12, 82);
+            "href="register.html">New Registration! register</a>
+                </form>
+            </center>
+        </div>
+    </body>
+</html>
