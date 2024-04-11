@@ -1,0 +1,127 @@
+/***************************
+                           STRESS MANAGEMENT
+ **************************/
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int ch;
+do{
+System.out.println("WELCOME BUDDIE");
+System.out.println("Please select any option given below");
+System.out.print("   [1]Fun Quiz \n   [2]Funny Jokes \n   [3]Story Teller \n   [4]Connection Game\n");
+System.out.print("Enter Your Choice : ");
+       int choice=sc.nextInt();
+       switch(choice){
+//////////////////////////// Fun Game /////////////////////////////////////////////////////////
+case 1:
+        {
+        int score = 0;
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("      Welcome to the TextGame!      ");
+        System.out.print("What's your name? ");
+        String name = sc.next();
+        System.out.println("Hi " + name + ", let's get started!");
+        System.out.println("Instruction :");
+        System.out.println("            In this game, you will be presented with a series of scenarios.");
+        System.out.println("            For each scenario, you will have to choose between two options.");
+        System.out.println("            Your goal is to pick the option that will lead to a positive outcome.");
+        System.out.println("....................Let's begin!..................");
+        System.out.println("Scenario 1: You're stuck in traffic and running late for a meeting.");
+        System.out.println("Do you A) honk your horn and try to weave through traffic \n       B) take a deep breath and accept that you'll be a little late?");
+        System.out.print("select any option :");
+        String answer1 = sc.next();
+        if (answer1.equalsIgnoreCase("b")) {
+            score += 10;
+            System.out.println("Great choice! Your score is now " + score);
+        } else {
+            System.out.println("Hmm, not the best choice. Your score is still " + score);
+        }
+
+        System.out.println("Scenario 2: Your boss asks you to work overtime on a Friday night.");
+        System.out.println("Do you A) decline and suggest working on the project on Monday \n       B) agree to work overtime?");
+        System.out.print("select any option :");
+        String answer2 = sc.next();
+        if (answer2.equalsIgnoreCase("a")) {
+            score += 10;
+            System.out.println("Another great choice! Your score is now " + score);
+        } else {
+            System.out.println("Not the best choice for your work-life balance. Your score is still " + score);
+        }
+
+        System.out.println("Scenario 3: You're feeling stressed and overwhelmed.");
+        System.out.println("Do you A) take a break and do something you enjoy \n       B) keep pushing yourself to get everything done?");
+        System.out.print("select any option :");
+        String answer3 = sc.next();
+        if (answer3.equalsIgnoreCase("a")) {
+            score += 10;
+            System.out.println("Smart choice for self-care! Your score is now " + score);
+        } else {
+            System.out.println("It's important to prioritize your mental health. Your score is still " + score);
+        }
+
+        System.out.println("Congratulations " + name + "! You completed the game with a score of " + score);
+        System.out.println("Thanks for playing and remember to take care of yourself!");
+    }break;
+/////////////////////////////// FUNNY JOKE /////////////////////////////////////////
+           case 2:
+                   System.out.println("----------------------------------------------------------------------------------------------------------------------");
+                   System.out.println("Girl : Nice mobile,where did you buy? \nBoy : I won this in running race! \nGirl:How many persons participated.\nBoy: Mobile owner, Police and Me");
+                            System.out.println("To continue the joke Press 1 :");
+                   System.out.println("To Stop the joke Press 2 :");
+                   ch=sc.nextInt();
+                if(ch==1){
+                            System.out.println("Girlfriend : Would like to be the best sun in my life?.\nBoy : Aww! Yes! \nGirlfriend : Good then stay 92,935,700 miles away from me.");
+                         }
+                         break;
+////////////////////////////// Story Teller ///////////////////////////////////////
+           case 3:
+                System.out.println("-------------------------------------------------------------------------------------------");
+                System.out.println("Lets start the Story");
+                System.out.println("Once upon a time, there was a farmer who was constantly stressed about his crops. One day, he decided to take a break and go for a walk in the countryside. As he walked, he realized that the beauty of nature had a calming effect on him. From that day on, he made it a habit to take regular walks and enjoy the peacefulness of the outdoors, which helped him manage his stress and worries.");
+                System.out.println("         MORAL : ENJOY EVERY MOMENT :)");
+                break;
+/////////////////////////////CONNECTION GAME ////////////////////////////////////////////////
+           case 4:
+                int score = 0;
+                  System.out.println("-----------------------------------------------------------------------------------------------");
+                  System.out.println("Welcome to the Connection Game");
+                  System.out.println("Let's begin!..................");
+                  System.out.println("Instruction : Connect the movies using related dialogues");
+                  System.out.println("Question 1: BLOODY SWEET\n    A)VIKRAM🔥\n    B)LEO🍫\n    C)LOVE TODAY❤");
+                  String answer1 = sc.next();
+                  if (answer1.equalsIgnoreCase("B")) {
+                               score += 10;
+                               System.out.println("Great choice! Your score is now " + score);
+                            } else {
+                            System.out.println("Sorry Wrong choice!. Your score is still " + score);
+                            }  
+                  System.out.println("Question 2: SOLLUNGA MAMAKUTTY\n    A)VIKRAM🔥\n    B)LEO🍫\n    C)LOVE TODAY❤");
+                           String answer2 = sc.next();
+                           if (answer2.equalsIgnoreCase("C")) {
+                               score += 10;
+                               System.out.println("Great choice! Your score is now " + score);
+                            } else {
+                            System.out.println("Sorry Wrong choice!. Your score is still " + score);
+                            }  
+                           System.out.println("Question 3: ROLEX AVAN PERU DHILLI\n    A)VIKRAM🔥\n    B)LEO🍫\n    C)LOVE TODAY❤");
+                           String answer3 = sc.next();
+                           if (answer3.equalsIgnoreCase("A")) {
+                               score += 10;
+                               System.out.println("Great choice! Your Final score is  " + score);
+                            } else {
+                             System.out.println("Sorry Wrong choice!. Your Final score is  " + score);
+                            }
+                            System.out.println("Thanks for playing and remember to take care of yourself!");
+                            System.out.println("                     The End............");
+                            break;
+       }
+       System.out.println("To continue Press 1 :");
+       System.out.println("To Stop Press 2 :");
+       ch=sc.nextInt();
+   }while(ch==1);
+        System.out.println("(: __________________________________ :)");
+
+}
+}
